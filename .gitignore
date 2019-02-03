@@ -1,0 +1,7 @@
+.DS_Store
+*.m~
+data/*
+*.graph
+*.graph.iperm
+*.txt
+*.pdf
