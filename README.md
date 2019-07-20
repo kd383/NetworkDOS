@@ -53,7 +53,7 @@ For **Matlab**:
 
 For **Python**, 
 
-* _coming soon_
+* `pyDOS` is implemented in Python2. Demos are coming soon.
 
 ## Usage
 
@@ -86,6 +86,13 @@ and the colors indicate the heights of the spectral histogram.
 ### B
 
 ### BTER comparison
+
+<p align="center">
+    <img src="/pics/erdos_dos_zoom.png" width="300">
+    <img src="/pics/bter_dos.png" width="300">
+    <img src="/pics/erdos_ldos.png" width="300">
+    <img src="/pics/bter_ldos.png" width="300">
+</p>
 
 ### Other demos
 
