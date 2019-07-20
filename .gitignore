@@ -1,7 +1,8 @@
 .DS_Store
 *.m~
-data/*
+Matlab/data/rodger
 *.graph
 *.graph.iperm
 *.txt
 *.pdf
+*.html
