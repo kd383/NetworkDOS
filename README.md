@@ -21,7 +21,7 @@ is published.
 1. [Introduction](#introduction)
 2. [Setup](#setup)
 3. [Usage](#usage)
-	1. [A](#a)
+	1. [Compute DOS/PDOS](#compute_dos/pdos)
 	2. [B](#b)
 	3. [C](#b)
 
@@ -44,16 +44,41 @@ densities for graphs with over a billion edges even on a single compute node.
 
 Clone the repository.
 
-For **Matlab**:
-  * If you would like to download the data used in our demos, check the data 
-  folder where we supply a shell script _fetch.sh_.  
-  * run _startup.m_.
+For **Matlab**:  
+
+* If you would like to download the data used in our demos, check the data 
+ 	folder where we supply a shell script _fetch.sh_.  
+* run _startup.m_.
 
 For **Python**, 
 
 ## Usage
 
-### A
+### Compute DOS/PDOS
+
+Our first demo is a simple computation of density of states (DOS) and pointwise
+density of states (PDOS). To run this experiment and produce the figure below, 
+you can use the `demo_dos` and `demo_ldos` commands. By default, they use 
+**Kernel Polynomial Method (KPM)** to compute 1000 Chebyshev moments with 20 
+probe vectors for the Erd &#955; s Collaboration Network.
+
+* method: 'cheb'(default), 'lan', 'nd', 'exact'
+* dname: Use one from RODGER dataset, or supply an adjacency matrix.
+
+Note that 'exact' method uses full matrix-matrix multiplication, so it should 
+be avoided on large networks. When 'lan' is used for PDOS, we only compute a 
+subsample of 100 nodes.
+
+<p align="center">
+    <img src="https://github.com/kd383/NetworkDOS/blob/master/pics/erdos_dos.pdf" width="200">
+    <img src="https://github.com/kd383/NetworkDOS/blob/master/pics/erdos_dos_zoom.pdf" width="200">
+    <img src="https://github.com/kd383/NetworkDOS/blob/master/pics/erdos_ldos.pdf" width="200">
+</p>
+
+For DOS, the blue bars are the exact count of eigenvalues in each bin, and the
+red dots are our approximation. The middle figure zooms in near the bottom. For 
+PDOS, the y-axis represents the node index, the x-axis represents eigenvalues, 
+and the colors indicate the heights of the spectral histogram.
 
 ### B
 
