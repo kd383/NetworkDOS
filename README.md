@@ -88,11 +88,13 @@ and the colors indicate the heights of the spectral histogram.
 ### BTER comparison
 
 <p align="center">
-	|<img src="/pics/erdos_dos_zoom.png" width="300">|<img src="/pics/bter_dos.png" width="300">|
-	|:---:|:---:|
-	|Erd&#337;s DOS|BTER DOS|
-	|<img src="/pics/erdos_ldos.png" width="300">|<img src="/pics/bter_ldos.png" width="300">|
-	|Erd&#337;s LDOS|BTER LDOS|
+	<figure>
+    <img src="/pics/erdos_dos_zoom.png" width="300">
+    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337</figcaption>
+    </figure>
+    <img src="/pics/bter_dos.png" width="300">
+    <img src="/pics/erdos_ldos.png" width="300">
+    <img src="/pics/bter_ldos.png" width="300">
 </p>
 
 ### Other demos
