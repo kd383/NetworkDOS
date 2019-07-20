@@ -61,6 +61,7 @@ fprintf('Time to compute Chebyshev moments: %g\n', toc);
 % Plot
 figure('outerposition',[0 0 900 900]);
 hold on
+box on
 lmin = max(min(lambda),-1);
 lmax = min(max(lambda), 1);
 x = linspace(lmin,lmax,Nbin+1);

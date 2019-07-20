@@ -48,4 +48,5 @@ if nargout < 1
     caxis manual
     caxis([bot top])
     colorbar;
+    box on;
 end
