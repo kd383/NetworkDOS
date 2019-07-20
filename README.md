@@ -88,22 +88,13 @@ and the colors indicate the heights of the spectral histogram.
 ### BTER comparison
 
 <p align="center">
-	<figure>
-	    <img src="/pics/erdos_dos_zoom.png" width="300">
-	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337;s DOS</figcaption>
-    </figure>
-    <figure>
-	    <img src="/pics/bter_dos.png" width="300">
-	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BTER DOS</figcaption>
-	</figure>
-	<figure>
-	    <img src="/pics/erdos_ldos.png" width="300">
-	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337;s LDOS</figcaption>
-	</figure>
-	<figure>
-	    <img src="/pics/bter_ldos.png" width="300">
-	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BTER LDOS</figcaption>
-	</figure>
+    <img src="/pics/erdos_dos_zoom.png" width="300">
+    <img src="/pics/bter_dos.png" width="300">
+    <br>
+    Erd&#337;s DOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; BTER DOS
+    <br>
+    <img src="/pics/erdos_ldos.png" width="300">
+    <img src="/pics/erdos_ldos.png" width="300">
 </p>
 
 ### Other demos
