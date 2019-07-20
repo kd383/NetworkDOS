@@ -60,7 +60,7 @@ Our first demo is a simple computation of density of states (DOS) and pointwise
 density of states (PDOS). To run this experiment and produce the figure below, 
 you can use the `demo_dos` and `demo_ldos` commands. By default, they use 
 **Kernel Polynomial Method (KPM)** to compute 1000 Chebyshev moments with 20 
-probe vectors for the Erd &#955; s Collaboration Network.
+probe vectors for the Erd&#337;s Collaboration Network.
 
 * method: 'cheb'(default), 'lan', 'nd', 'exact'
 * dname: Use one from RODGER dataset, or supply an adjacency matrix.
