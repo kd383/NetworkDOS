@@ -89,12 +89,21 @@ and the colors indicate the heights of the spectral histogram.
 
 <p align="center">
 	<figure>
-    <img src="/pics/erdos_dos_zoom.png" width="300">
-    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337</figcaption>
+	    <img src="/pics/erdos_dos_zoom.png" width="300">
+	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337;s DOS</figcaption>
     </figure>
-    <img src="/pics/bter_dos.png" width="300">
-    <img src="/pics/erdos_ldos.png" width="300">
-    <img src="/pics/bter_ldos.png" width="300">
+    <figure>
+	    <img src="/pics/bter_dos.png" width="300">
+	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BTER DOS</figcaption>
+	</figure>
+	<figure>
+	    <img src="/pics/erdos_ldos.png" width="300">
+	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Erd&#337;s LDOS</figcaption>
+	</figure>
+	<figure>
+	    <img src="/pics/bter_ldos.png" width="300">
+	    <figcaption>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;BTER LDOS</figcaption>
+	</figure>
 </p>
 
 ### Other demos
