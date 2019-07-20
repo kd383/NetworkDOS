@@ -94,7 +94,7 @@ and the colors indicate the heights of the spectral histogram.
     (a)Erd&#337;s DOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (b)BTER DOS
     <br>
     <img src="/pics/erdos_ldos.png" width="300">
-    <img src="/pics/erdos_ldos.png" width="300">
+    <img src="/pics/bter_ldos.png" width="300">
     <br>
     (c)Erd&#337;s LDOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d)BTER LDOS
 </p>

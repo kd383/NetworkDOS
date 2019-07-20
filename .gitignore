@@ -5,3 +5,5 @@ Matlab/data/rodger
 *.graph.iperm
 *.txt
 *.html
+*.pyc
+Python/pyDOS/__pycache__
