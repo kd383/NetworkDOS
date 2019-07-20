@@ -72,7 +72,7 @@ subsample of 100 nodes.
 <p align="center">
     <img src="/pics/erdos_dos.pdf" width="200">
     <img src="/pics/erdos_dos_zoom.pdf" width="200">
-    <img src="/pics/erdos_ldos.pdf" width="200">
+    <img src="/pics/erdos_ldos.png" width="200">
 </p>
 
 For DOS, the blue bars are the exact count of eigenvalues in each bin, and the
