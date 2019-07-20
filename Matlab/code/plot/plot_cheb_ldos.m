@@ -40,7 +40,7 @@ end
 if nargout < 1
     yr = [1, nnodes];
     xr = [xx0(1)+xx0(2), xx0(end-1)+xx0(end)]/2;
-    figure('outerposition',[0 0 900 900]);
+    figure('outerposition',[0 0 1050 900]);
     bot = min(min(yy)); top = max(max(yy));
     
     imagesc(xr, yr, yy(idx,:));
@@ -48,5 +48,8 @@ if nargout < 1
     caxis manual
     caxis([bot top])
     colorbar;
+    xlabel('\lambda')
+    ylabel('Node Index')
+    set(gca,'xtick',linspace(-1,1,11),'FontSize',40,'FontWeight','bold');
     box on;
 end

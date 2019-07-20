@@ -59,7 +59,7 @@ cf = filter_jackson(c);
 fprintf('Time to compute Chebyshev moments: %g\n', toc);
 
 % Plot
-figure('outerposition',[0 0 900 900]);
+figure('outerposition',[0 0 1050 900]);
 hold on
 box on
 lmin = max(min(lambda),-1);
