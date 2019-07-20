@@ -21,9 +21,10 @@ is published.
 1. [Introduction](#introduction)
 2. [Setup](#setup)
 3. [Usage](#usage)
-	1. [Compute DOS/PDOS](#compute_dos/pdos)
+	1. [Compute DOS/PDOS](#compute-dospdos)
 	2. [B](#b)
 	3. [C](#b)
+	4. [Other Demos](#other-demos)
 
 ## Introduction
 
@@ -51,6 +52,8 @@ For **Matlab**:
 * run _startup.m_.
 
 For **Python**, 
+
+* _coming soon_
 
 ## Usage
 
@@ -82,5 +85,8 @@ and the colors indicate the heights of the spectral histogram.
 
 ### B
 
-### C
+### BTER comparison
 
+### Other demos
+
+A few demos are coming in the near future. Thank you for your patience.

@@ -1,0 +1,1 @@
+Run erdos_test for a comprehensive test for all modules on erdos matrix
