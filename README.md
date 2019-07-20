@@ -70,9 +70,9 @@ be avoided on large networks. When 'lan' is used for PDOS, we only compute a
 subsample of 100 nodes.
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/kd383/NetworkDOS/master/pics/erdos_dos.pdf" width="200">
-    <img src="https://raw.githubusercontent.com/kd383/NetworkDOS/master/pics/erdos_dos_zoom.pdf" width="200">
-    <img src="https://raw.githubusercontent.com/kd383/NetworkDOS/master/pics/erdos_ldos.pdf" width="200">
+    <img src="/pics/erdos_dos.pdf" width="200">
+    <img src="/pics/erdos_dos_zoom.pdf" width="200">
+    <img src="/pics/erdos_ldos.pdf" width="200">
 </p>
 
 For DOS, the blue bars are the exact count of eigenvalues in each bin, and the
