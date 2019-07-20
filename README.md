@@ -1,8 +1,7 @@
 Network Density of States (NDOS)
 ===============
 
-This repository contains the experiments of the [Network Density of States]
-(https://arxiv.org/abs/1905.09758) by Kun Dong, Austin Benson, David Bindel. 
+This repository contains the experiments of the [Network Density of States](https://arxiv.org/abs/1905.09758) by Kun Dong, Austin Benson, David Bindel. 
 This paper will be appearing at KDD 2019.
 
 The bibliographic information for the paper will be updated once the proceeding 
@@ -45,7 +44,10 @@ densities for graphs with over a billion edges even on a single compute node.
 
 Clone the repository.
 
-For **Matlab**, run _startup.m_.
+For **Matlab**:
+  * If you would like to download the data used in our demos, check the data 
+  folder where we supply a shell script _fetch.sh_.  
+  * run _startup.m_.
 
 For **Python**, 
 
