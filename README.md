@@ -84,6 +84,13 @@ PDOS, the y-axis represents the node index, the x-axis represents eigenvalues,
 and the colors indicate the heights of the spectral histogram.
 
 ### Motif Filtering
+
+In this demo, we demonstrate the effect of our motif filtering method. Use the code `demo_HepTh` to reproduce this experiment on the [Arxiv High Energy Physics Theory Collaboration Network](http://snap.stanford.edu/data/ca-HepTh.html). 
+
+Local motifs in a network are associated with certain eigenvalues. As a result, frequent occurrence of these motifs leads to high multiplicities of some eigenvalues. We can observe this phenomenon as these spikes at &#955;=0, -1/2, -1/3, -1/4 in the spectral density of the normalized adjacency matrix. Consequently, we need to compute more moments due to those irregularities.
+
+To overcome this issue, we detect common motifs by hashing the adjacency lists of nodes. Afterwards, we pre-compute a filter to project the random probe vectors onto the orthogonal complement of the eigenvectors corresponding to these spikes. Thus, we are able to improve the smoothness of the spectral density, and the convergence of the approximation. The figures below show the process where we sequentially apply filters at various locations.
+
 <p align="center">
     <img src="/pics/hepth_0filt.png" width="300">
     <img src="/pics/hepth_1filt.png" width="300">
@@ -93,12 +100,12 @@ and the colors indicate the heights of the spectral histogram.
     <img src="/pics/hepth_2filt.png" width="300">
     <img src="/pics/hepth_3filt.png" width="300">
     <br>
-    (c) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) Filter at &#955;=-1/2
+    (c) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) Filter at &#955;=-1/2
     <br>
     <img src="/pics/hepth_4filt.png" width="300">
-    <img src="/pics/filter_error.png" width="300">
+    <img src="/pics/filter_error.png" width="250">
     <br>
-    (c) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) Relative Error
+    (e) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (f) Relative Error
 </p>
 
 ### Model Comparison: BTER
