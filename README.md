@@ -84,6 +84,22 @@ PDOS, the y-axis represents the node index, the x-axis represents eigenvalues,
 and the colors indicate the heights of the spectral histogram.
 
 ### Motif Filtering
+<p align="center">
+    <img src="/pics/hepth_0filt.png" width="300">
+    <img src="/pics/hepth_1filt.png" width="300">
+    <br>
+    (a) No Filter &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (b) Filter at &#955;=0
+    <br>
+    <img src="/pics/hepth_2filt.png" width="300">
+    <img src="/pics/hepth_3filt.png" width="300">
+    <br>
+    (c) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) Filter at &#955;=-1/2
+    <br>
+    <img src="/pics/hepth_4filt.png" width="300">
+    <img src="/pics/filter_error.png" width="300">
+    <br>
+    (c) Filter at &#955;=-1/3 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) Relative Error
+</p>
 
 ### Model Comparison: BTER
 

@@ -36,9 +36,9 @@ end
 % Filter the probe vectors
 if ~isempty(filter) > 0
     Q = [filter(:).Q];
+    Z = Z - Q*(Q'*Z);
 end
 
-Z = Z - Q*(Q'*Z);
 
 switch method
     case 'cheb'
