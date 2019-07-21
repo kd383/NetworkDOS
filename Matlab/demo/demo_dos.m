@@ -2,7 +2,7 @@
 %
 % Loads the graph in the rodger collection (with reference eigenvalues)
 % and plots histograms computed with true eigenvalue distribution and with
-% the  estimate.
+% the estimate.
 %
 % Input:
 %   method: One of the approximation methods.

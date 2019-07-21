@@ -22,7 +22,7 @@ is published.
 2. [Setup](#setup)
 3. [Usage](#usage)
 	1. [Compute DOS/PDOS](#compute-dospdos)
-	2. [B](#b)
+	2. [Motif Filtering](#motif-filtering)
 	3. [Model Comparison: BTER](#model-comparison-bter)
 	4. [Other Demos](#other-demos)
 
@@ -83,22 +83,22 @@ red dots are our approximation. The middle figure zooms in near the bottom. For
 PDOS, the y-axis represents the node index, the x-axis represents eigenvalues, 
 and the colors indicate the heights of the spectral histogram.
 
-### B
+### Motif Filtering
 
 ### Model Comparison: BTER
 
-[BTER model](https://arxiv.org/pdf/1112.3644.pdf) closely captures many properties of a graph, such as degree distribution, clustering coefficient, and distribution of eigenvalues of the adjacency matrix. We followed this [guide](https://www.sandia.gov/~tgkolda/feastpack/doc_bter_match.html) to create a model for the Erd&#337;s collaboration network and compare its DOS/PDOS against the original. We find the construction process of BTER, particular its treatment of degree-one nodes, creates an abundance of motifs absent in the original graph.
+[BTER model](https://arxiv.org/pdf/1112.3644.pdf) closely captures many properties of a graph, such as degree distribution, clustering coefficient, and distribution of eigenvalues of the adjacency matrix. We followed this [guide](https://www.sandia.gov/~tgkolda/feastpack/doc_bter_match.html) to create a model for the Erd&#337;s collaboration network and compare its DOS/PDOS against the original. We find the construction process of BTER, particular its treatment of degree-one nodes, leads to an abundance of motifs absent in the original graph. Use the command `demo_bter_comparison` to run this demo.
 
 <p align="center">
     <img src="/pics/erdos_dos_zoom.png" width="300">
     <img src="/pics/bter_dos.png" width="300">
     <br>
-    (a)Erd&#337;s DOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (b)BTER DOS
+    (a) Erd&#337;s DOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (b) BTER DOS
     <br>
     <img src="/pics/erdos_ldos.png" width="300">
     <img src="/pics/bter_ldos.png" width="300">
     <br>
-    (c)Erd&#337;s PDOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d)BTER PDOS
+    (c) Erd&#337;s PDOS &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; (d) BTER PDOS
 </p>
 
 ### Other demos

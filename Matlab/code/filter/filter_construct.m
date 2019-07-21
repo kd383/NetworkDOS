@@ -1,38 +1,40 @@
-% vdf = filter_construct(vd,sqd,nsize)
-% construct kernel from doubling vertices 
+% Q = filter_construct(vinfo, sqd, n)
+% construct a projection matrix Q representing the a filter.
 %
-% vd - list of indices of double vertices
-% sqd - square root of degrees
-% nsize - # of vertices
+% Input:
+%   vinfo: Sets of nodes that form the filter.
+%   sqd:   Square root of degrees.
+%   n:     Number of vertices.
 % 
-% last updated: 12-22-2014 (renaming variable and update comments)
+% Output:
+%   Q:     A matrix with eigenvectors of the target eigenvalue as columns.
+%
+function Q = filter_construct(vinfo, sqd, n)
 
-function vdf = filter_construct(vd,sqd,nsize)
-    n=size(vd,1);
-    vdl = zeros(length(vd),1);
-    for i = 1:length(vd)
-        vdl(i) = length(vd{i});
+nf = size(vinfo,1);
+vfl = zeros(length(vinfo), 1);
+for i = 1:length(vinfo)
+    vfl(i) = length(vinfo{i});
+end
+nnzvf = sum(vfl);
+npair = 2*(nnzvf - nf);
+ind = zeros(npair,3);
+count1 = 1;
+count2 = 1;
+% allocate based on vinfo
+for i = 1:nf
+    for j = 2:length(vinfo{i})
+        ind(count2, :)=[count1, vinfo{i}(1), sqd(vinfo{i}(1))];
+        ind(count2+1,:)=[count1, vinfo{i}(j), -sqd(vinfo{i}(j))];
+        count1 = count1 + 1;
+        count2 = count2 + 2;
     end
-    nnzvd = sum(vdl);
-    npair=2*(nnzvd-n);
-    ind=zeros(npair,3);
-    count_1=1;
-    count_2=1;
-    % allocate based on v_double
-    for i=1:n
-        for j=2:length(vd{i})
-            ind(count_2,:)=[count_1,vd{i}(1),sqd(vd{i}(1))];
-            ind(count_2+1,:)=[count_1,vd{i}(j),-sqd(vd{i}(j))];
-            count_1=count_1+1;
-            count_2=count_2+2;
-        end
-    end
-    % construct sparse kernel
-    vdf=sparse(ind(:,2),ind(:,1),ind(:,3),nsize,nnzvd-n);
-    % find the block sizes. blocks are naturally orthornormal to each other.
-    ind2=[0;cumsum(vdl-ones(n,1))];
-    % orthonormalization by blocks
-    for j=2:n+1
-        [vdf(:,ind2(j-1)+1:ind2(j)) ~]=qr(vdf(:,ind2(j-1)+1:ind2(j)),0);
-    end
+end
+% construct sparse kernel
+Q = sparse(ind(:, 2), ind(:, 1), ind(:, 3), n, nnzvf - nf);
+% find the block sizes. blocks are naturally orthornormal to each other.
+ind2 = [0; cumsum(vfl - ones(nf, 1))];
+% orthonormalization by blocks
+for j = 2:nf+1
+    [Q(:, ind2(j-1)+1:ind2(j)), ~] = qr(Q(:, ind2(j-1)+1:ind2(j)),0);
 end
